@@ -10,26 +10,26 @@ import {
   IonMenuButton,
 } from "@ionic/react";
 
-const Home: React.FC = () => (
+const Profile: React.FC = () => (
   <IonPage>
     <IonHeader>
       <IonToolbar>
         <IonButtons slot="start">
           <IonMenuButton />
         </IonButtons>
-        <IonTitle>Home</IonTitle>
+        <IonTitle>Profile</IonTitle>
       </IonToolbar>
     </IonHeader>
 
     <IonContent fullscreen>
       <IonHeader collapse="condense">
         <IonToolbar>
-          <IonTitle size="large">Home</IonTitle>
+          <IonTitle size="large">Profile</IonTitle>
         </IonToolbar>
       </IonHeader>
-      Home
+      Profile
     </IonContent>
   </IonPage>
 );
 
-export default Home;
+export default Profile;

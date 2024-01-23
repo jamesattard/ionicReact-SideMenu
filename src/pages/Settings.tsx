@@ -1,4 +1,4 @@
-// pages/Profile.tsx
+// pages/Settings.tsx
 import React from "react";
 import {
   IonContent,
@@ -10,26 +10,26 @@ import {
   IonMenuButton,
 } from "@ionic/react";
 
-const Home: React.FC = () => (
+const Settings: React.FC = () => (
   <IonPage>
     <IonHeader>
       <IonToolbar>
         <IonButtons slot="start">
           <IonMenuButton />
         </IonButtons>
-        <IonTitle>Home</IonTitle>
+        <IonTitle>Settings</IonTitle>
       </IonToolbar>
     </IonHeader>
 
     <IonContent fullscreen>
       <IonHeader collapse="condense">
         <IonToolbar>
-          <IonTitle size="large">Home</IonTitle>
+          <IonTitle size="large">Settings</IonTitle>
         </IonToolbar>
       </IonHeader>
-      Home
+      Settings
     </IonContent>
   </IonPage>
 );
 
-export default Home;
+export default Settings;
