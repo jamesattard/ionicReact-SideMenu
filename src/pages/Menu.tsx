@@ -12,6 +12,7 @@ import {
   IonButtons,
   IonLabel,
   IonRouterLink,
+  IonMenuToggle,
 } from "@ionic/react";
 
 const Menu: React.FC = () => {
@@ -25,21 +26,29 @@ const Menu: React.FC = () => {
         </IonHeader>
         <IonContent className="ion-padding">
           <IonList>
-            <IonRouterLink routerLink="/home">
-              <IonItem>
-                <IonLabel>Home</IonLabel>
-              </IonItem>
-            </IonRouterLink>
-            <IonRouterLink routerLink="/settings">
-              <IonItem>
-                <IonLabel>Settings</IonLabel>
-              </IonItem>
-            </IonRouterLink>
-            <IonRouterLink routerLink="/profile">
-              <IonItem>
-                <IonLabel>Profile</IonLabel>
-              </IonItem>
-            </IonRouterLink>
+            <IonMenuToggle>
+              <IonRouterLink routerLink="/home">
+                <IonItem>
+                  <IonLabel>Home</IonLabel>
+                </IonItem>
+              </IonRouterLink>
+            </IonMenuToggle>
+
+            <IonMenuToggle>
+              <IonRouterLink routerLink="/settings">
+                <IonItem>
+                  <IonLabel>Settings</IonLabel>
+                </IonItem>
+              </IonRouterLink>
+            </IonMenuToggle>
+
+            <IonMenuToggle>
+              <IonRouterLink routerLink="/profile">
+                <IonItem>
+                  <IonLabel>Profile</IonLabel>
+                </IonItem>
+              </IonRouterLink>
+            </IonMenuToggle>
           </IonList>
         </IonContent>
       </IonMenu>
